@@ -18,12 +18,12 @@
         />
     </head>
 
-    <body>
-        <header>
+<body>
+ <header>
             <!-- place navbar here -->
-             <nav class="navbar navbar-expand-lg bg-body-tertiary">
+             <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-      <a class="navbar-brand" aria-current="page" href="#">
+      <a class="navbar-brand text-white" aria-current="page" href="#">
       <img src="/dashbo_img/img/duck.png" with="50" height="50">
       Catalogo Libri</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +32,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="" href="#">Anagrafica Utenti</a>
+          <a class="nav-link active text-secondary" aria-current="" href="#">Anagrafica Utenti</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="" href="#">Storico Prestiti</a>
+          <a class="nav-link active text-secondary" aria-current="" href="#">Storico Prestiti</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-controls="">Help</a>
+          <a class="nav-link active text-secondary" aria-controls="">Help</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -48,13 +48,48 @@
     </div>
   </div>
 </nav>
-        </header>
+</header>
         <main>
-            
-        </main>
-        <footer>
+            <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+        <h2 class="accordion-header bg-body-secondary">
+        <div class="accordion-div text-start">
+        Todo
+        <hr>
+        </div>
+        </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <ul class="list-group">
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+            <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+        </li>
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+            <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+        </li>
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+            <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+        </li>
+       </ul>
+      </div>
+    </div>
+  </div>
+    <div class="toggle">
+       <ul class="list-group">
+        <li class="list-group-item bg-body-secondary">F.A.Q</li>
+        <li class="list-group-item dropdown-button">Come aggiungere un nuovo libro?</li>
+        <li class="list-group-item">Come posso accedere all'anagrafica utenti?</li>
+        <li class="list-group-item">Posso usare questa dashboard da mobile?</li>
+       </ul>
+    </div>
+  
+</main>
+<footer>
             <!-- place footer here -->
-        </footer>
+</footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
